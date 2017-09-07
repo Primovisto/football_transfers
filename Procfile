@@ -1,0 +1,1 @@
+web: gunicorn football_transfers_dashboard:app
