@@ -30,7 +30,7 @@ def donor_projects():
     FIELDS = {
         '_id': False, 'WINDOW': True, 'LEAGUE': True,
         'PRICE': True, 'PRICE DESCRIPTION': True,
-        'POSITION': True, 'SEASON': True, 'COUNTRY': True
+        'POSITION': True, 'SEASON': True, 'COUNTRY': True, 'TOTAL TRANSFERS': True
     }
 
     # Open a connection to MongoDB using a with statement such that the
