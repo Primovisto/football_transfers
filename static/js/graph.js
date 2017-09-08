@@ -69,11 +69,11 @@ function makeGraphs(error, donorsUSProjects) {
     var maxYear = yearDim.top(1)[0]["SEASON"];
 
     //Charts
-    var totalTransfersND = dc.numberDisplay("#total-donations-nd");
+    var totalTransfersND = dc.numberDisplay("#total-transfers-nd");
     var transferWindowChart = dc.pieChart("#window-chart");
-    var transferTypeChart = dc.pieChart("#focus-subject-chart");
-    var playerPositionChart = dc.rowChart("#poverty-level-row-chart");
-    var numberTransfersND = dc.numberDisplay("#number-projects-nd");
+    var transferTypeChart = dc.pieChart("#transfer-type-chart");
+    var playerPositionChart = dc.rowChart("#player-position-row-chart");
+    var numberTransfersND = dc.numberDisplay("#number-transfers-nd");
     var numberTransfersPerSeasonChart = dc.lineChart('#year_appearance');
     var transferValueChart = dc.lineChart("#donation-value-line-chart");
 

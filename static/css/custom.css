@@ -1,12 +1,31 @@
-#number-projects-nd {
-   font-size: 60px;
+body{
+   background:url('http://wallpapers.ae/wp-content/uploads/2016/02/Football-Ground-Picture.jpg');
 }
 
-#total-donations-nd {
-   font-size: 60px;
+#number-transfers-nd {
+   font-size: 53px;
 }
 
+#total-transfers-nd {
+   font-size: 53px;
+}
 
+.small.text-muted{
+   color:#fff;
+   font-size:15px;
+}
+.reset {
+    float: right;
+    margin-top:15px;
+}
+
+#window-chart{
+   margin-left:50px;
+}
+
+#transfer-type-chart{
+   margin-left:50px;
+}
 
 
 .dc-chart g.row text {
