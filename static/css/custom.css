@@ -10,6 +10,15 @@ body{
    font-size: 53px;
 }
 
+#intro_button{
+    margin-top:15px;
+    margin-right:10px;
+}
+
+.navbar-brand{
+    color:#fff;
+}
+
 .small.text-muted{
    color:#fff;
    font-size:15px;

@@ -77,8 +77,6 @@ function makeGraphs(error, donorsUSProjects) {
     var numberTransfersPerSeasonChart = dc.lineChart('#year_appearance');
     var transferValueChart = dc.lineChart("#donation-value-line-chart");
 
-
-
     selectField = dc.selectMenu('#menu-select')
         .dimension(stateDim)
         .group(stateGroup);
