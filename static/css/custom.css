@@ -11,7 +11,7 @@ background-size:cover;}
 }
 
 .chart-title{
-    font-family: droid-sans;
+
     font-weight:600;
 }
 
@@ -71,6 +71,16 @@ background-size:cover;}
    text-align: center;
    padding-top: 12px;
    padding-bottom: 0;
+}
+
+.trans{
+    background-color:#fff;
+    opacity:0.94;
+}
+
+.chart-title{
+    background-color:#fff;
+    opacity:0.94;
 }
 
 

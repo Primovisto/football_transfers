@@ -68,6 +68,12 @@ function makeGraphs(error, donorsUSProjects) {
     var minYear = yearDim.bottom(1)[0]["SEASON"];
     var maxYear = yearDim.top(1)[0]["SEASON"];
 
+    //Set Colours
+
+    var pieChartColours = ['#0a0c1e', '#1f245c', '#343c9a', '#858ac2'];
+    var rowChartColours =['#0a0c1e', '#1f245c', '#343c9a', '#858ac2'];
+
+
     //Charts
     var totalTransfersND = dc.numberDisplay("#total-transfers-nd");
     var transferWindowChart = dc.pieChart("#window-chart");
@@ -82,9 +88,9 @@ function makeGraphs(error, donorsUSProjects) {
         .group(stateGroup);
 
     transferWindowChart
-        .ordinalColors(["#79CED7", "#66AFB2", "#C96A23", "#D3D1C5", "#F5821F"])
-        .height(220)
-        .radius(90)
+        .ordinalColors(pieChartColours)
+        .height(240)
+        .radius(110)
         .innerRadius(40)
         .transitionDuration(1500)
         .dimension(fundingStatus)
@@ -101,19 +107,27 @@ function makeGraphs(error, donorsUSProjects) {
 
 
     transferTypeChart
-        .height(220)
-        .radius(90)
+        .height(240)
+        .radius(110)
         .innerRadius(40)
         .transitionDuration(1500)
         .dimension(focusSubjectDim)
-        .group(numProjectsByFocusSubject);
+        .group(numProjectsByFocusSubject)
+        .ordinalColors(pieChartColours);
+
 
     playerPositionChart
         .width(300)
         .height(250)
         .dimension(povertyLevelDim)
         .group(numProjectsByPovertyLevel)
+        .ordinalColors(rowChartColours)
         .xAxis().ticks(4);
+
+
+
+
+
 
     numberTransfersND
 
@@ -135,7 +149,7 @@ function makeGraphs(error, donorsUSProjects) {
         .renderArea(true)
         .yAxisLabel("Number of Transfers")
          .xAxisLabel("Season")
-        .colors(["#003d76"]);
+        .colors(["#3b5998"]);
 
      transferValueChart
         .width(880)
@@ -145,7 +159,7 @@ function makeGraphs(error, donorsUSProjects) {
             return d.key + ": " + formatCommas(d.value);
         })
         .dimension(yearDim)
-        .group(valueDonationsByDate, 'Total Transfer Fees (€)')
+        .group(valueDonationsByDate, 'Total Transfer Fees ($)')
         .x(d3.scale.ordinal().domain([(minYear),(maxYear)]))
          .legend(dc.legend().x(120).y(20).itemHeight(13).gap(5))
         .xUnits(dc.units.ordinal)
@@ -154,8 +168,8 @@ function makeGraphs(error, donorsUSProjects) {
         .brushOn(false)
         .renderArea(true)
          .xAxisLabel("Season")
-        .ordinalColors(['#41ab5d'])
-     .elasticY(true)
+        .ordinalColors(['#3b5998'])
+        .elasticY(true)
         .renderHorizontalGridLines(true);
 
 
