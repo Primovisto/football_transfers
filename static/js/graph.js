@@ -96,7 +96,8 @@ function makeGraphs(error, donorsUSProjects) {
             return d;
         })
         .group(totalTransfers)
-        .formatNumber(formatDollarsCommas);
+        .formatNumber(formatDollarsCommas)
+        .height(150);
 
 
     transferTypeChart

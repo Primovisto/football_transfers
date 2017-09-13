@@ -1,4 +1,6 @@
-
+body{
+    background:url('http://media.operationsports.com/shots/1370918023-media.jpg');
+background-size:cover;}
 
 #number-transfers-nd {
    font-size: 53px;
@@ -6,6 +8,11 @@
 
 #total-transfers-nd {
    font-size: 53px;
+}
+
+.chart-title{
+    font-family: droid-sans;
+    font-weight:600;
 }
 
 #intro_button{
@@ -68,13 +75,13 @@
 
 
 .dc-select-menu {
-   background: #33CC99;
-   width: 80%;
-   border: none;
+   background: #eee;
+   width: 100%;
+   border: 1px solid #bbb;
    position: relative;
    height: 31px;
    font-size: 15px;
-   color: white;
+   color: #666;
    vertical-align: middle;
    text-align: center;
    padding-top: 4px;

@@ -9,14 +9,42 @@
     <link rel="stylesheet" href="/static/lib/css/introjs.css">
   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
   <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 </head>
 <body>
 
   <div  id="outer" class="container-fluid">
     <div class="row">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand" id="navbar-brand-states-combined" style="color:#fff; margin-top:5px; font-family:Verdana;">
+                Worldwide Soccer Transfers 2007-2017
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-menu">
+            <p class="navbar-nav pull-right">
 
 
-          <!-- Time Chart -->
+
+                <button class="btn btn-info" id="intro_button" type="button" autofocus onclick="introJs().start();">Start Tour!</button>
+                <button class="btn btn-primary reset navbar-btn" style="color:#fff;"
+                        onclick="dc.filterAll();dc.renderAll();">Reset All
+                </button>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+        
 
 
 
@@ -26,7 +54,7 @@
                     <div class="col-sm-3 col-xs-12">
 
            <div class="chart-wrapper" data-step="1" data-intro="Dropdown menu allowing the user to choose any(or all) Leagues" data-position="bottom" style="font-weight:normal">
-               <div class="chart-title">
+               <div class="chart-title" style="font-family:Verdana; font-size:16px;">
                    Select League
                </div>
                <div class="chart-stage">
@@ -36,7 +64,7 @@
         </div>
                         <div class="col-sm-6">
                     <div class="chart-wrapper" data-step="8" data-intro="Value of transfers for the selected state in USD" data-position="top" style="font-weight:normal">
-                        <div class="chart-title">
+                        <div class="chart-title" style="font-family:Verdana; font-size:16px;">
                             Total Transfer Fees in Euro
                         </div>
                         <div class="chart-stage">
@@ -47,7 +75,7 @@
 
             <div class="col-sm-3">
            <div class="chart-wrapper" data-step="7" data-intro="Total donations of selected state" data-position="top" style="font-weight:normal">
-               <div class="chart-title">
+               <div class="chart-title" style="font-family:Verdana; font-size:16px;">
                    Total Number of Transfers
                </div>
                <div class="chart-stage" style=" background: #fff;
@@ -70,7 +98,7 @@
                         <div class="row">
 
                <div class="chart-wrapper" data-step="7" data-intro="Total donations of selected state" data-position="top" style="font-weight:normal">
-                   <div class="chart-title">
+                   <div class="chart-title" style="font-family:Verdana; font-size:16px;">
                             Total Number and Value of Transfers per Season
                         </div>
                     <div class="chart-stage">
@@ -109,7 +137,7 @@
 
           <div class="col-sm-6 col-lg-12">
             <div class="chart-wrapper">
-              <div class="chart-title">
+              <div class="chart-title" style="font-family:Verdana; font-size:16px;">
                 Transfer Window
               </div>
               <div class="chart-stage">
@@ -120,7 +148,7 @@
 
             <div class="col-sm-6 col-lg-12">
                    <div class="chart-wrapper" data-step="4" data-intro="A pie chart that shows primary focus subjects on which funding utilised." data-position="top" style="font-weight:normal">
-                       <div class="chart-title">
+                       <div class="chart-title" style="font-family:Verdana; font-size:16px;">
                            Transfer Type
                        </div>
                        <div class="chart-stage">
@@ -133,7 +161,7 @@
 
             <div class="col-sm-6 col-lg-12">
                    <div class="chart-wrapper" data-step="5" data-intro="A row chart that shows the poverty level changes of schools according to funding" data-position="top" style="font-weight:normal">
-                       <div class="chart-title">
+                       <div class="chart-title" style="font-family:Verdana; font-size:16px;">
                             Player Position
                        </div>
                        <div class="chart-stage">
@@ -158,24 +186,6 @@
 
 
     </div>
-
-
-      <!-- Poverty -->
-
-
-      <!-- Poverty -->
-
-      <!-- menu select -->
-
-      <!-- menu select -->
-
-      <!-- Metric 1 -->
-
-      <!-- Metric 1 -->
-
-      <!-- Metric 2 -->
-
-      <!-- Metric 2 -->
 
 
 
