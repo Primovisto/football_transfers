@@ -7,8 +7,8 @@ import os
 app = Flask(__name__)
 
 MONGO_URI = os.getenv('MONGODB_URI')
-DBS_NAME = os.getenv('MONGO_DB_NAME', 'FB_Transfers12345')
-COLLECTION_NAME = os.getenv('MONGO_COLLECTION_NAME', 'transfers')
+DBS_NAME = os.getenv('MONGO_DB_NAME', 'heroku_6z398f5x')
+COLLECTION_NAME = os.getenv('MONGO_COLLECTION_NAME', 'fb_transfers')
 
 # MONGODB_HOST = 'localhost'
 # MONGODB_PORT = 27017
