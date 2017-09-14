@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 MONGODB_HOST = 'localhost'
 MONGODB_PORT = 27017
-DBS_NAME = 'FB_Transfers1234'
-COLLECTION_NAME = 'transfers1234'
+DBS_NAME = 'FB_Transfers12345'
+COLLECTION_NAME = 'transfers'
 
 
 @app.route("/")

@@ -89,8 +89,8 @@ function makeGraphs(error, donorsUSProjects) {
 
     transferWindowChart
         .ordinalColors(pieChartColours)
-        .height(240)
-        .radius(110)
+        .height(234)
+        .radius(100)
         .innerRadius(40)
         .transitionDuration(1500)
         .dimension(fundingStatus)
@@ -107,13 +107,18 @@ function makeGraphs(error, donorsUSProjects) {
 
 
     transferTypeChart
-        .height(240)
-        .radius(110)
+        .height(234)
+        .radius(100)
+        .width(360)
         .innerRadius(40)
         .transitionDuration(1500)
         .dimension(focusSubjectDim)
         .group(numProjectsByFocusSubject)
-        .ordinalColors(pieChartColours);
+        .ordinalColors(pieChartColours)
+        .legend(dc.legend().x(20).y(10).itemHeight(13).gap(5))
+        .cx(220)
+        .cy(117);
+
 
 
     playerPositionChart
@@ -138,7 +143,7 @@ function makeGraphs(error, donorsUSProjects) {
         .group(all);
 
      numberTransfersPerSeasonChart
-        .width(880)
+        .width(900)
         .height(300)
         .dimension(yearDim)
         .group(total_year)
@@ -149,10 +154,12 @@ function makeGraphs(error, donorsUSProjects) {
         .renderArea(true)
         .yAxisLabel("Number of Transfers")
          .xAxisLabel("Season")
-        .colors(["#3b5998"]);
+        .colors(["#3b5998"])
+
+
 
      transferValueChart
-        .width(880)
+        .width(900)
         .height(300)
          .margins(dateDimChartMargins)
          .title(function (d) {
@@ -167,6 +174,7 @@ function makeGraphs(error, donorsUSProjects) {
         .elasticX(true)
         .brushOn(false)
         .renderArea(true)
+         .yAxisLabel("$")
          .xAxisLabel("Season")
         .ordinalColors(['#3b5998'])
         .elasticY(true)
