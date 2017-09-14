@@ -31,20 +31,21 @@
                     </div>
                     <div class="collapse navbar-collapse" id="nav-menu">
                         <p class="navbar-nav pull-right">
-                            <button class="btn btn-info" id="intro_button" type="button" autofocus onclick="introJs().start();">Start Tour!</button>
+                            <button class="btn btn-info" id="intro_button" type="button" autofocus onclick="introJs().start();">Start Tour! </button>
                             <button class="btn btn-primary reset navbar-btn" style="color:#fff;" onclick="dc.filterAll();dc.renderAll();">Reset All
                             </button>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="dashboard-header">
+            <div class="col-sm-6 col-sm-offset-4 introjs-showElement" data-step="1" data-intro="<h3>Welcome to the Football Transfers Dashboard</h3><hr><p>The dashboard displays data on all transfers between clubs within the world's major football leagues between 2010 and 2017. The dataset FB_Transfers12345.csv was downloaded from https://www.kaggle.com/hugomathien/soccer. </p" data-position="bottom" style="font-weight:normal; position:relative; top:30px;">>
+
             </div>
             <div class="col-lg-8 col-xs-12" style="margin-top:80px;">
                 <!-- Select League -->
                 <div class="row">
                     <div class="col-sm-3 col-xs-12">
-                        <div class="chart-wrapper trans" data-step="1" data-intro="Dropdown menu allowing the user to choose any(or all) Leagues. Selectable leagues include only top tier leagues" data-position="bottom" style="font-weight:normal">
+                        <div class="chart-wrapper trans" data-step="2" data-intro="Dropdown menu allowing the user to choose any(or all) Leagues. Selectable leagues include only top tier leagues" data-position="bottom" style="font-weight:normal">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Select League
                             </div>
@@ -55,7 +56,7 @@
                     </div>
                     <!-- Value of Transfers -->
                     <div class="col-sm-6">
-                        <div class="chart-wrapper trans" data-step="2" data-intro="This figure represents the total amount spent on transfers (USD)." data-position="bottom" style="font-weight:normal">
+                        <div class="chart-wrapper trans" data-step="3" data-intro="This figure represents the total amount spent on transfers (USD)." data-position="bottom" style="font-weight:normal">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Total Transfer Fees in USD
                             </div>
@@ -66,7 +67,7 @@
                     </div>
                     <!-- Number of Transfers -->
                     <div class="col-sm-3">
-                        <div class="chart-wrapper trans" data-step="3" data-intro="Represents the total number of transfers that have occurred in the stated time period" data-position="bottom" style="font-weight:normal">
+                        <div class="chart-wrapper trans" data-step="4" data-intro="Represents the total number of transfers that have occurred in the stated time period" data-position="bottom" style="font-weight:normal">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Total Transfers
                             </div>
@@ -86,7 +87,7 @@
                 <!-- Number of Transfers per Season -->
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="chart-wrapper trans" data-step="4" data-intro="A line chart which shows the total number of transfers that have been completed per season" data-position="top" style="font-weight:normal">
+                        <div class="chart-wrapper trans" data-step="5" data-intro="A line chart which shows the total number of transfers that have been completed per season" data-position="top" style="font-weight:normal">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Total Transfers per Season
                             </div>
@@ -98,7 +99,7 @@
                     </div>
                     <!-- Value of Transfers per Season -->
                     <div class="row">
-                        <div class="chart-wrapper trans" data-step="5" data-intro="A line chart which shows the total value of transfers that have been completed per season" data-position="top" style="font-weight:normal">
+                        <div class="chart-wrapper trans" data-step="6" data-intro="A line chart which shows the total value of transfers that have been completed per season" data-position="top" style="font-weight:normal">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Total Value of Transfers per Season
                             </div>
@@ -113,7 +114,7 @@
             <div class="col-lg-4 col-xs-12" style="margin-top:80px;">
                 <div class="row">
                     <div class="col-sm-6 col-lg-12">
-                        <div class="chart-wrapper trans" data-step="6" data-intro="A pie chart that shows which transfer window transfers have been completed during." data-position="bottom">
+                        <div class="chart-wrapper trans" data-step="7" data-intro="A pie chart that shows which transfer window transfers have been completed during." data-position="bottom">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Transfer Window
                             </div>
@@ -124,7 +125,7 @@
                     </div>
                     <!-- Transfer Type Pie Chart -->
                     <div class="col-sm-6 col-lg-12">
-                        <div class="chart-wrapper trans" data-step="7" data-intro="Another pie chart showing the type of transfer that was completed. The chart illustrates whether a transfer was a sale, a loan, a free transfer or if the sale fee was undisclosed" data-position="top" style="font-weight:normal">
+                        <div class="chart-wrapper trans" data-step="8" data-intro="Another pie chart showing the type of transfer that was completed. The chart illustrates whether a transfer was a sale, a loan, a free transfer or if the sale fee was undisclosed" data-position="top" style="font-weight:normal">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Transfer Type
                             </div>
@@ -135,7 +136,7 @@
                     </div>
                     <!-- Player Position Row Chart -->
                     <div class="col-sm-6 col-lg-12">
-                        <div class="chart-wrapper trans" data-step="8" data-intro="A row chart that shows the position of the transferred player." data-position="top" style="font-weight:normal">
+                        <div class="chart-wrapper trans" data-step="9" data-intro="A row chart that shows the position of the transferred player." data-position="top" style="font-weight:normal">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Player Position
                             </div>
