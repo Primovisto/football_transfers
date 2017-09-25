@@ -1,6 +1,39 @@
 body{
-    background:url('http://media.operationsports.com/shots/1370918023-media.jpg');
+    background:#eee;
 background-size:cover;}
+
+section#header{
+
+    width:100%;
+    height: 90%;
+    background-image: url("https://i.pinimg.com/originals/a0/0c/0a/a00c0aba97639eba087968a516c53008.jpg"),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    position: relative;
+}
+
+#top-header{
+    background: transparent;
+    font-family: 'verdana';
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+.navbar-brand{
+    width: 100%;
+    text-align: center;
+    padding: 0 0 0 0;
+    float: none;
+}
+#top-header a{
+      font-size: 80px!important;
+}
+
+#top-header p{
+    font-size: 25px;
+    padding: 0 100px;
+}
 
 #number-transfers-nd {
    font-size: 53px;
@@ -8,6 +41,10 @@ background-size:cover;}
 
 #total-transfers-nd {
    font-size: 53px;
+}
+
+.chart-wrapper{
+    border:2px solid #fff;
 }
 
 .chart-title{

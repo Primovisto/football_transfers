@@ -11,41 +11,27 @@
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
     <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Fira+Sans:700|Signika:700" rel="stylesheet">
 </head>
 
 <body>
-    <div id="outer" class="container-fluid">
-        <div class="row">
-            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="navbar-brand" id="navbar-brand-states-combined" href="./" style="color:#fff; margin-top:5px; font-family:Verdana; font-size:20px;">
-                           :: Football Transfers Dashboard 2010 - 2017 ::
-                        </div>
-                    </div>
-                    <div class="collapse navbar-collapse" id="nav-menu">
-                        <p class="navbar-nav pull-right">
-                            <button class="btn btn-info" id="intro_button" type="button" autofocus onclick="introJs().start();">Start Tour! </button>
-                            <button class="btn btn-primary reset navbar-btn" style="color:#fff;" onclick="dc.filterAll();dc.renderAll();">Reset All
-                            </button>
-                        </p>
-                    </div>
-                </div>
+    <section id="header">
+
+            <div id="top-header" style="height:700px;" role="navigation">
+                <h3 class="title" style="font-size: 60px; font-family: 'Fira Sans', sans-serif; text-align:center; color:#fff; position:relative; top:35%; text-shadow: 0 0 20px #000;">Football Transfers Dashboard</h3>
+                <h4 class="title medium-text" style="font-size:22px; text-align:center; color:#fff; position:relative; top:35%; padding:0 150px;text-shadow: 0 0 30px #000;font-family: 'Concert One', cursive; margin-top:40px;">The number one source for football transfer data and statistics across the world's top leagues. Want to know which leagues spend the most on transfers? Which positions are the most transferred or which transfer window is the most popular? If so, you're in the right place!</h4>
+                
             </div>
-            <div class="col-sm-6 col-sm-offset-4 introjs-showElement" data-step="1" data-intro="<h3>Welcome to the Football Transfers Dashboard</h3><hr><p>The dashboard displays data on all transfers between clubs within the world's major football leagues between 2010 and 2017. The dataset FB_Transfers12345.csv was downloaded from https://www.kaggle.com/hugomathien/soccer. </p" data-position="bottom" style="font-weight:normal; position:relative; top:30px;">>
+            <div class="col-sm-6 col-sm-offset-4" data-step="1" data-intro="<h3>Welcome to the Football Transfers Dashboard</h3><hr><p>The dashboard displays data on all transfers between clubs within the world's major football leagues between 2010 and 2017. The dataset FB_Transfers12345.csv was downloaded from https://www.kaggle.com/hugomathien/soccer. </p" data-position="bottom" style="font-weight:normal; position:relative; top:30px;">
 
             </div>
+
+    </section>
             <div class="col-lg-8 col-xs-12" style="margin-top:80px;">
                 <!-- Select League -->
                 <div class="row">
                     <div class="col-sm-3 col-xs-12">
-                        <div class="chart-wrapper trans" data-step="2" data-intro="Dropdown menu allowing the user to choose any(or all) Leagues. Selectable leagues include only top tier leagues" data-position="bottom" style="font-weight:normal">
+                        <div class="chart-wrapper trans" data-step="2" data-intro="Dropdown menu allowing the user to choose any(or all) Leagues. Selectable leagues include only top tier leagues" data-position="bottom" style="font-weight:normal; border:2px solid #fff;">
                             <div class="chart-title" style="font-family:Verdana; font-size:15px;">
                                 Select League
                             </div>
@@ -147,8 +133,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
     <hr>
     <p class="small text-muted" style="color:#fff; font-weight:600;margin-left:30px; font-family: sans-serif; font-size:16px;"> Data Visualization by Ed Stack for Code Institute</p>
     <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
