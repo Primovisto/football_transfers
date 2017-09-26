@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Fira+Sans:700|Signika:700" rel="stylesheet">
+
 </head>
 
 <body>
     <section id="header">
 
-            <div id="top-header" style="height:700px;" role="navigation">
+            <div id="top-header" style="height:780px;" role="navigation">
                 <h3 class="title" style="font-size: 60px; font-family: 'Fira Sans', sans-serif; text-align:center; color:#fff; position:relative; top:35%; text-shadow: 0 0 20px #000;">Football Transfers Dashboard</h3>
                 <h4 class="title medium-text" style="font-size:22px; text-align:center; color:#fff; position:relative; top:35%; padding:0 150px;text-shadow: 0 0 30px #000;font-family: 'Concert One', cursive; margin-top:40px;">The number one source for football transfer data and statistics across the world's top leagues. Want to know which leagues spend the most on transfers? Which positions are the most transferred or which transfer window is the most popular? If so, you're in the right place!</h4>
-                
+                <input type="button" value="Get Started" id="scroll" class="get-started" style="background-color:#d7d7d7; color:#121212; border-radius:5px; position:relative; top:35%; padding:12px 24px; font-family:'concert one'; font-size:20px; margin-top:40px;"/>
             </div>
             <div class="col-sm-6 col-sm-offset-4" data-step="1" data-intro="<h3>Welcome to the Football Transfers Dashboard</h3><hr><p>The dashboard displays data on all transfers between clubs within the world's major football leagues between 2010 and 2017. The dataset FB_Transfers12345.csv was downloaded from https://www.kaggle.com/hugomathien/soccer. </p" data-position="bottom" style="font-weight:normal; position:relative; top:30px;">
 
@@ -31,8 +32,8 @@
                 <!-- Select League -->
                 <div class="row">
                     <div class="col-sm-3 col-xs-12">
-                        <div class="chart-wrapper trans" data-step="2" data-intro="Dropdown menu allowing the user to choose any(or all) Leagues. Selectable leagues include only top tier leagues" data-position="bottom" style="font-weight:normal; border:2px solid #fff;">
-                            <div class="chart-title" style="font-family:Verdana; font-size:15px;">
+                        <div class="chart-wrapper trans" data-step="2" data-intro="Dropdown menu allowing the user to choose any(or all) Leagues. Selectable leagues include only top tier leagues" data-position="bottom" style="font-weight:normal;">
+                            <div class="chart-title" style="font-size:15px;">
                                 Select League
                             </div>
                             <div class="chart-stage">
@@ -43,10 +44,10 @@
                     <!-- Value of Transfers -->
                     <div class="col-sm-6">
                         <div class="chart-wrapper trans" data-step="3" data-intro="This figure represents the total amount spent on transfers (USD)." data-position="bottom" style="font-weight:normal">
-                            <div class="chart-title" style="font-family:Verdana; font-size:15px;">
+                            <div class="chart-title" style="font-size:15px;">
                                 Total Transfer Fees in USD
                             </div>
-                            <div class="chart-stage">
+                            <div class="chart-stage" style="color:#fff;">
                                 <div id="total-transfers-nd"></div>
                             </div>
                         </div>
@@ -54,13 +55,13 @@
                     <!-- Number of Transfers -->
                     <div class="col-sm-3">
                         <div class="chart-wrapper trans" data-step="4" data-intro="Represents the total number of transfers that have occurred in the stated time period" data-position="bottom" style="font-weight:normal">
-                            <div class="chart-title" style="font-family:Verdana; font-size:15px;">
+                            <div class="chart-title" style="font-size:15px;">
                                 Total Transfers
                             </div>
                             <div class="chart-stage" style="
                    position: relative;
                    font-size: 29px;
-                   color: #444;
+                   color: #fff;
                    vertical-align: middle;
                    text-align: center;
                    padding-top: 8px;
@@ -74,7 +75,7 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="chart-wrapper trans" data-step="5" data-intro="A line chart which shows the total number of transfers that have been completed per season" data-position="top" style="font-weight:normal">
-                            <div class="chart-title" style="font-family:Verdana; font-size:15px;">
+                            <div class="chart-title" style="font-size:15px;">
                                 Total Transfers per Season
                             </div>
                             <div class="chart-stage">
@@ -86,7 +87,7 @@
                     <!-- Value of Transfers per Season -->
                     <div class="row">
                         <div class="chart-wrapper trans" data-step="6" data-intro="A line chart which shows the total value of transfers that have been completed per season" data-position="top" style="font-weight:normal">
-                            <div class="chart-title" style="font-family:Verdana; font-size:15px;">
+                            <div class="chart-title" style="font-size:15px;">
                                 Total Value of Transfers per Season
                             </div>
                             <div class="chart-stage">
@@ -101,7 +102,7 @@
                 <div class="row">
                     <div class="col-sm-6 col-lg-12">
                         <div class="chart-wrapper trans" data-step="7" data-intro="A pie chart that shows which transfer window transfers have been completed during." data-position="bottom">
-                            <div class="chart-title" style="font-family:Verdana; font-size:15px;">
+                            <div class="chart-title" style="font-size:15px;">
                                 Transfer Window
                             </div>
                             <div class="chart-stage">
@@ -112,7 +113,7 @@
                     <!-- Transfer Type Pie Chart -->
                     <div class="col-sm-6 col-lg-12">
                         <div class="chart-wrapper trans" data-step="8" data-intro="Another pie chart showing the type of transfer that was completed. The chart illustrates whether a transfer was a sale, a loan, a free transfer or if the sale fee was undisclosed" data-position="top" style="font-weight:normal">
-                            <div class="chart-title" style="font-family:Verdana; font-size:15px;">
+                            <div class="chart-title" style="font-size:15px;">
                                 Transfer Type
                             </div>
                             <div class="chart-stage">
@@ -123,7 +124,7 @@
                     <!-- Player Position Row Chart -->
                     <div class="col-sm-6 col-lg-12">
                         <div class="chart-wrapper trans" data-step="9" data-intro="A row chart that shows the position of the transferred player." data-position="top" style="font-weight:normal">
-                            <div class="chart-title" style="font-family:Verdana; font-size:15px;">
+                            <div class="chart-title" style="font-size:15px;">
                                 Player Position
                             </div>
                             <div class="chart-stage">
@@ -145,6 +146,15 @@
     <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
     <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
     <script src="/static/lib/js/intro.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+    $('#scroll').click(function() {
+        $('body').animate({scrollTop: +800}, 1000);
+    })
+});
+  </script>
+
 </body>
 
 </html>

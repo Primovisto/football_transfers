@@ -54,6 +54,10 @@ div.dc-chart {
     shape-rendering: crispEdges;
 }
 
+.dc-chart g.row text {
+    fill: white;
+}
+
 .dc-chart .axis text {
     font: 10px sans-serif;
 }
@@ -243,4 +247,8 @@ div.dc-chart {
 
 .dc-hard .number-display {
     float: none;
+}
+
+.dc-chart g.row text {
+    fill: white;
 }

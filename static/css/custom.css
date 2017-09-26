@@ -1,14 +1,19 @@
 body{
-    background:#eee;
-background-size:cover;}
+    background:#000;
+    width:100%;
+    height:100%;
+}
 
 section#header{
-
     width:100%;
-    height: 90%;
-    background-image: url("https://i.pinimg.com/originals/a0/0c/0a/a00c0aba97639eba087968a516c53008.jpg"),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 100%;
+    background-image: url("http://i66.tinypic.com/2qlcpea.jpg");
     background-size: cover;
     position: relative;
+}
+
+.get-started:hover{
+    background-color:#888;
 }
 
 #top-header{
@@ -44,12 +49,16 @@ section#header{
 }
 
 .chart-wrapper{
-    border:2px solid #fff;
+
+    background-color:#2a6496;
+
 }
 
 .chart-title{
-
+    font-family:'fira sans', 'sans serif';
     font-weight:600;
+    color:#121212;
+
 }
 
 #intro_button{
@@ -111,13 +120,14 @@ section#header{
 }
 
 .trans{
-    background-color:#fff;
+    background-color:#28365C;
     opacity:0.94;
 }
 
 .chart-title{
     background-color:#fff;
     opacity:0.94;
+    font-weight:600;
 }
 
 
@@ -128,7 +138,7 @@ section#header{
    position: relative;
    height: 31px;
    font-size: 15px;
-   color: #666;
+   color: #121212;
    vertical-align: middle;
    text-align: center;
    padding-top: 4px;

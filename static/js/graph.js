@@ -70,8 +70,8 @@ function makeGraphs(error, donorsUSProjects) {
 
     //Set Colours
 
-    var pieChartColours = ['#0a0c1e', '#1f245c', '#343c9a', '#858ac2'];
-    var rowChartColours =['#0a0c1e', '#1f245c', '#343c9a', '#858ac2'];
+    var pieChartColours = ['#d11141', '#00b159', '#00aedb', '#ffc425'];
+    var rowChartColours =['#d11141', '#00b159', '#00aedb', '#ffc425'];
 
 
     //Charts
@@ -130,10 +130,6 @@ function makeGraphs(error, donorsUSProjects) {
         .xAxis().ticks(4);
 
 
-
-
-
-
     numberTransfersND
 
         .formatNumber(d3.format("d"))
@@ -154,7 +150,7 @@ function makeGraphs(error, donorsUSProjects) {
         .renderArea(true)
         .yAxisLabel("Number of Transfers")
          .xAxisLabel("Season")
-        .colors(["#3b5998"])
+        .colors(["#00b159"]);
 
 
 
@@ -176,11 +172,9 @@ function makeGraphs(error, donorsUSProjects) {
         .renderArea(true)
          .yAxisLabel("$")
          .xAxisLabel("Season")
-        .ordinalColors(['#3b5998'])
+        .ordinalColors(['#00b159'])
         .elasticY(true)
         .renderHorizontalGridLines(true);
-
-
 
     dc.renderAll();
 }
