@@ -18,23 +18,26 @@
 <body>
     <section id="header">
 
+
             <div id="top-header" style="height:780px;" role="navigation">
                 <h3 class="title" style="font-size: 60px; font-family: 'Fira Sans', sans-serif; text-align:center; color:#fff; position:relative; top:25%; text-shadow: 0 0 20px #000;">Football Transfers Dashboard</h3>
                 <h4 class="title medium-text" style="font-size:22px; text-align:center; color:#fff; position:relative; top:25%; padding:0 150px;text-shadow: 0 0 30px #000;font-family: 'Concert One', cursive; margin-top:40px;">The number one source for football transfer data and statistics across the world's top leagues. Want to know which leagues spend the most on transfers? Which positions are the most transferred or which transfer window is the most popular? If so, you're in the right place!</h4>
-                <input type="button" value="Get Started" id="scroll" class="get-started" style="background-color:#d7d7d7; color:#121212; border-radius:5px; position:relative; top:25%; padding:12px 24px; font-family:'tahoma';  font-weight:600; font-size:20px; margin-top:40px;"/>
+                <input type="button" value="Get Started" id="scroll" class="get-started" style="background-color:#d7d7d7; color:#121212; border-radius:5px; position:relative; left: 43%;display:block;
+    top: 28%; padding:12px 24px; font-family:'tahoma';  font-weight:600; font-size:20px; margin-top:40px;"/>
             </div>
             <div class="col-sm-6 col-sm-offset-4" data-step="1" data-intro="<h3>Welcome to the Football Transfers Dashboard</h3><hr><p>The dashboard displays data on all transfers between clubs within the world's major football leagues between 2010 and 2017. The dataset FB_Transfers12345.csv was downloaded from https://www.kaggle.com/hugomathien/soccer. </p" data-position="bottom" style="font-weight:normal; position:relative; top:30px;">
 
             </div>
+
 
     </section>
     <div class="dash-header">
 
             <div class="col-lg-12 col-md-12 col-sm-12">
 
-                <button type="button" onclick="javascript:introJs().start();" style="color:#fff; position:relative;
+                <button type="button" class="guide-btn" onclick="javascript:introJs().start();" style="color:#fff; position:relative;
     left:38%;font-size:20px; border:none; border-radius:3px; background-color:#263356; top:30px; padding:10px 15px; margin:0; text-align:center; text-decoration:none;">User Guide</button>
-                <button onclick="javascript:dc.filterAll();dc.renderAll();" style="color:#fff; position:relative;
+                <button type="button" class="reset-btn" onclick="javascript:dc.filterAll();dc.renderAll();" style="color:#fff; position:relative;
     left:41%;font-size:20px; background-color:#263356;top:30px; margin:0;border:none; border-radius:3px; padding:10px 15px; text-align:center; text-decoration:none;"><img src="http://i67.tinypic.com/qn7cde.png" style="position:relative; top:-4px;" height="20" width="20"> Reset All</button>
             </div>
 

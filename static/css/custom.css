@@ -11,6 +11,9 @@ section#header{
     background-size: cover;
     position: relative;
 }
+.get-started{
+
+}
 
 .get-started:hover{
     background-color:#888;
@@ -144,4 +147,17 @@ section#header{
    padding-top: 4px;
    padding-bottom: 0;
 
+}
+@media screen and (max-width: 680px){
+    .get-started{
+         left: 41%;
+
+    }
+    .guide-btn{
+        left:34%;
+    }
+
+    .reset-btn{
+        left:38%;
+    }
 }
