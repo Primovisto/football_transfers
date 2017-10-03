@@ -174,8 +174,7 @@ function makeGraphs(error, donorsUSProjects) {
          .xAxisLabel("Season")
         .ordinalColors(['#00b159'])
         .elasticY(true)
-        .renderHorizontalGridLines(true)
-     .label(fill:white;);
+        .renderHorizontalGridLines(true);
 
     dc.renderAll();
 }
