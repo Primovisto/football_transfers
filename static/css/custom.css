@@ -148,6 +148,38 @@ section#header{
    padding-bottom: 0;
 
 }
+button.reset-btn{
+    color:#fff;
+    position:relative;
+    left:41%;
+    font-size:20px;
+    background-color:#263356;
+    margin:0;
+    border:none;
+    border-radius:3px;
+    padding:10px 15px;
+    text-align:center;
+    text-decoration:none;
+}
+
+button.reset-btn img{
+    position:relative;
+    top:-4px;
+}
+
+button.guide-btn{
+    color:#fff;
+    position:relative;
+    left:38%;
+    font-size:20px;
+    border:none;
+    border-radius:3px;
+    background-color:#263356;
+    padding:10px 15px;
+    margin:0;
+    text-align:center;
+    text-decoration:none;
+}
 @media screen and (max-width: 680px){
     .get-started{
          left: 41%;

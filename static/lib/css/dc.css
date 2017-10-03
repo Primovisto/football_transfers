@@ -222,10 +222,10 @@ div.dc-chart {
     -o-user-select: none;
     user-select: none;
     pointer-events: none;
-    fill:white;
 }
 .dc-chart .axis text{
     fill:white;
+    font: 10px sans-serif;
 }
 
 .dc-chart path.highlight {
