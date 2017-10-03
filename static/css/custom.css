@@ -11,13 +11,7 @@ section#header{
     background-size: cover;
     position: relative;
 }
-.get-started{
 
-}
-
-.get-started:hover{
-    background-color:#888;
-}
 
 #top-header{
     background: transparent;
@@ -34,6 +28,29 @@ section#header{
     padding: 0 0 0 0;
     float: none;
 }
+section#header #top-header{
+    height:780px;
+}
+section#header #top-header h3{
+    font-size: 60px;
+    font-family: 'Fira Sans','sans-serif';
+    text-align:center;
+    color:#fff;
+    position:relative;
+    top:25%;
+    text-shadow: 0 0 20px #000;
+}
+section#header #top-header h4{
+    font-size:22px;
+    text-align:center;
+    color:#fff;
+    position:relative;
+    top:25%;
+    padding:0 150px;
+    text-shadow: 0 0 30px #000;
+    font-family: 'Concert One', cursive;
+    margin-top:40px;
+}
 #top-header a{
       font-size: 80px!important;
 }
@@ -41,6 +58,20 @@ section#header{
 #top-header p{
     font-size: 25px;
     padding: 0 100px;
+}
+input#scroll.get-started{
+    background-color:#d7d7d7;
+    color:#121212;
+    border-radius:5px;
+    position:relative;
+    left: 43%;
+    display:block;
+    top: 28%;
+    padding:12px 24px;
+    font-family:'tahoma';
+    font-weight:600;
+    font-size:20px;
+    margin-top:40px;
 }
 
 #number-transfers-nd {
@@ -54,6 +85,7 @@ section#header{
 .chart-wrapper{
 
     background-color:#2a6496;
+    font-weight:normal;
 
 }
 
@@ -61,12 +93,19 @@ section#header{
     font-family:'fira sans', 'sans serif';
     font-weight:600;
     color:#121212;
+    font-size:15px;
+    background-color:#fff;
+    opacity:0.94;
 
 }
+
 
 #intro_button{
     margin-top:15px;
     margin-right:10px;
+}
+#total-transfers{
+
 }
 
 .navbar-brand{
@@ -125,12 +164,6 @@ section#header{
 .trans{
     background-color:#28365C;
     opacity:0.94;
-}
-
-.chart-title{
-    background-color:#fff;
-    opacity:0.94;
-    font-weight:600;
 }
 
 
