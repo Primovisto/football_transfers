@@ -224,7 +224,9 @@ div.dc-chart {
     pointer-events: none;
     fill:white;
 }
-
+.dc-chart .axis text{
+    fill:white;
+}
 
 .dc-chart path.highlight {
     stroke-width: 3;
@@ -249,4 +251,11 @@ div.dc-chart {
 
 .dc-hard .number-display {
     float: none;
+}
+text.x-axis-label{
+    fill:white;
+}
+
+text.y-axis-label.y-label{
+    fill:white;
 }
