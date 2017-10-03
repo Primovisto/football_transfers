@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Fira+Sans:700|Signika:700" rel="stylesheet">
+    <script src="/static/lib/js/jquery-3.2.1.min.js"></script>
 
 
 
@@ -28,9 +29,7 @@
                 <input type="button" value="Get Started" id="scroll" class="get-started" style="background-color:#d7d7d7; color:#121212; border-radius:5px; position:relative; left: 43%;display:block;
     top: 28%; padding:12px 24px; font-family:'tahoma';  font-weight:600; font-size:20px; margin-top:40px;"/>
             </div>
-            <div class="col-sm-6 col-sm-offset-4" data-step="1" data-intro="<h3>Welcome to the Football Transfers Dashboard</h3><hr><p>The dashboard displays data on all transfers between clubs within the world's major football leagues between 2010 and 2017. The dataset FB_Transfers12345.csv was downloaded from https://www.kaggle.com/hugomathien/soccer. </p" data-position="bottom" style="font-weight:normal; position:relative; top:30px;">
 
-            </div>
 
 
     </section>
@@ -45,6 +44,10 @@
             </div>
 
     </div>
+
+
+<div class="col-lg-12 col-md-12" data-step="1" data-intro="<h3>Welcome to the Football Transfers Dashboard</h3><hr><p>The dashboard displays data on all transfers between clubs within the world's major football leagues between 2010 and 2017. The dataset FB_Transfers12345.csv was downloaded from https://www.kaggle.com/hugomathien/soccer.</p> "data-position="auto" data-scrollTo="tooltip" style="font-weight:normal;">
+
             <div class="col-lg-8 col-xs-12" style="margin-top:80px;">
                 <!-- Select League -->
                 <div class="row">
@@ -151,9 +154,12 @@
                     </div>
                 </div>
             </div>
+</div>
+
+
 
     <hr>
-    <p class="small text-muted" style="color:#fff; font-weight:600;margin-left:30px; font-family: sans-serif; font-size:16px;"> Data Visualization by Ed Stack for Code Institute</p>
+    <div class="footer-text" class="small text-muted" style="color:#fff; font-weight:600;margin-left:30px; font-family: sans-serif; font-size:16px;"> Data Visualization by Ed Stack for Code Institute</div>
     <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
     <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
     <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
@@ -163,7 +169,7 @@
     <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
     <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
     <script src="/static/lib/js/intro.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
   <script type="text/javascript">
 $(document).ready(function() {
     $('#scroll').click(function() {
