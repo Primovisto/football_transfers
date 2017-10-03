@@ -230,4 +230,14 @@ button.guide-btn{
     .reset-btn{
         left:38%;
     }
+    section#header #top-header h4{
+
+    font-size:12px;
+    position:relative;
+    top:25%;
+    padding:0 10px;
+    text-shadow: 0 0 30px #000;
+    font-family: 'Concert One', cursive;
+    margin-top:40px;
+}
 }
