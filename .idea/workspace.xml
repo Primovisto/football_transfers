@@ -27,7 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="football_transfers_dashboard.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="football_transfers_dashboard.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/football_transfers_dashboard.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -59,13 +59,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="51">
+              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1604#1610#0#HTML" expanded="true" />
+                <element signature="e#1677#1683#0#HTML" expanded="true" />
+                <element signature="e#1683#1689#0#HTML" expanded="true" />
+                <element signature="e#1690#1696#0#HTML" expanded="true" />
+                <element signature="e#1696#1702#0#HTML" expanded="true" />
+                <element signature="e#1710#1716#0#HTML" expanded="true" />
+                <element signature="e#1716#1722#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -369,7 +376,14 @@
         <state relative-caret-position="493">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1604#1610#0#HTML" expanded="true" />
+            <element signature="e#1677#1683#0#HTML" expanded="true" />
+            <element signature="e#1683#1689#0#HTML" expanded="true" />
+            <element signature="e#1690#1696#0#HTML" expanded="true" />
+            <element signature="e#1696#1702#0#HTML" expanded="true" />
+            <element signature="e#1710#1716#0#HTML" expanded="true" />
+            <element signature="e#1716#1722#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -433,7 +447,14 @@
         <state relative-caret-position="493">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1604#1610#0#HTML" expanded="true" />
+            <element signature="e#1677#1683#0#HTML" expanded="true" />
+            <element signature="e#1683#1689#0#HTML" expanded="true" />
+            <element signature="e#1690#1696#0#HTML" expanded="true" />
+            <element signature="e#1696#1702#0#HTML" expanded="true" />
+            <element signature="e#1710#1716#0#HTML" expanded="true" />
+            <element signature="e#1716#1722#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -497,7 +518,14 @@
         <state relative-caret-position="493">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1604#1610#0#HTML" expanded="true" />
+            <element signature="e#1677#1683#0#HTML" expanded="true" />
+            <element signature="e#1683#1689#0#HTML" expanded="true" />
+            <element signature="e#1690#1696#0#HTML" expanded="true" />
+            <element signature="e#1696#1702#0#HTML" expanded="true" />
+            <element signature="e#1710#1716#0#HTML" expanded="true" />
+            <element signature="e#1716#1722#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -553,7 +581,14 @@
         <state relative-caret-position="493">
           <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1604#1610#0#HTML" expanded="true" />
+            <element signature="e#1677#1683#0#HTML" expanded="true" />
+            <element signature="e#1683#1689#0#HTML" expanded="true" />
+            <element signature="e#1690#1696#0#HTML" expanded="true" />
+            <element signature="e#1696#1702#0#HTML" expanded="true" />
+            <element signature="e#1710#1716#0#HTML" expanded="true" />
+            <element signature="e#1716#1722#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,22 +733,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/football_transfers_dashboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="e#1604#1610#0#HTML" expanded="true" />
+            <element signature="e#1677#1683#0#HTML" expanded="true" />
+            <element signature="e#1683#1689#0#HTML" expanded="true" />
+            <element signature="e#1690#1696#0#HTML" expanded="true" />
+            <element signature="e#1696#1702#0#HTML" expanded="true" />
+            <element signature="e#1710#1716#0#HTML" expanded="true" />
+            <element signature="e#1716#1722#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

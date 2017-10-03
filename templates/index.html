@@ -17,6 +17,37 @@
 </head>
 
 <body>
+
+<div class="navbar navbar-inverse navbar-fixed-top visible-xs" role="navigation">
+    <div class="container">
+        <div class="navbar-header visible-xs">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand" id="navbar-brand-states-combined">
+                Football Transfers
+                <span class="hidden-md hidden-lg">:&nbsp;</span>
+                <span class="hidden-xs hidden-sm">Dashboard&nbsp;&nbsp;-&nbsp;&nbsp;Showing:&nbsp;&nbsp;</span>
+                <span id="stateFilter">All states</span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse visible-xs" id="nav-menu">
+            <p class="navbar-nav pull-right">
+
+                <button class="intro_button btn btn-primary navbar-btn visible-xs" type="button" autofocus
+                        onclick="startGuide();">Guide
+                </button>
+                <button class="btn btn-primary reset navbar-btn visible-xs"
+                        onclick="dc.filterAll();dc.renderAll();">Reset All
+                </button>
+            </p>
+        </div>
+    </div>
+</div>
     <section id="header">
         <div id="top-header hidden-xs" role="navigation">
             <h3 class="hidden-xs">Football Transfers Dashboard</h3>
