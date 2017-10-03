@@ -249,3 +249,10 @@ div.dc-chart {
 .dc-hard .number-display {
     float: none;
 }
+text.x-axis-label{
+    fill:white;
+}
+
+text.y-axis-label.y-label{
+    fill:white;
+}
