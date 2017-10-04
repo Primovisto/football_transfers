@@ -17,12 +17,41 @@
 </head>
 
 <body>
+<div class="navbar navbar-inverse navbar-fixed-top hidden-md hidden-lg" role="navigation">
+    <div class="container">
+        <div class="navbar-header hidden-md hidden-lg">
+            <button type="button" class="navbar-toggle collapsed hidden-md hidden-lg" data-toggle="collapse" data-target="#nav-menu"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand hidden-md hidden-lg" id="navbar-brand-states-combined">
+                School Donations
+                <span class="hidden-md hidden-lg">:&nbsp;</span>
+                <span class="hidden-xs hidden-sm">Dashboard&nbsp;&nbsp;-&nbsp;&nbsp;Showing:&nbsp;&nbsp;</span>
+                <span id="stateFilter">All states</span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse hidden-md hidden-lg" id="nav-menu">
+            <p class="navbar-nav pull-right">
 
+                <button class="intro_button btn btn-primary navbar-btn" type="button" autofocus
+                        onclick="javascript:startGuide();">Guide
+                </button>
+                <button class="btn btn-primary reset navbar-btn"
+                        onclick="javascript:dc.filterAll();dc.renderAll();">Reset All
+                </button>
+            </p>
+        </div>
+    </div>
+</div>
     <section id="header">
         <div id="top-header" role="navigation">
             <h3>Football Transfers Dashboard</h3>
             <h4>The number one source for football transfer data and statistics across the world's top leagues. Want to know which leagues spend the most on transfers? Which positions are the most transferred or which transfer window is the most popular? If so, you're in the right place!</h4>
-            <input type="button" value="Get Started" id="scroll" class="get-started" />
+            <input type="button" value="Get Started" id="scroll" class="get-started"/>
         </div>
     </section>
 

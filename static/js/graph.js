@@ -176,7 +176,5 @@ function makeGraphs(error, donorsUSProjects) {
         .elasticY(true)
         .renderHorizontalGridLines(true);
 
-     d3.select("#loading-data").attr("hidden", "");
-
     dc.renderAll();
 }
