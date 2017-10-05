@@ -169,7 +169,8 @@ function makeGraphs(error, donorsUSProjects) {
          .yAxisLabel("$")
          .xAxisLabel("Season")
         .ordinalColors(['#00b159'])
-        .elasticY(true);
+        .elasticY(true)
+         .useViewBoxResizing(true);
 
     dc.renderAll();
 
