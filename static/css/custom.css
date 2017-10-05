@@ -29,8 +29,8 @@ section#header{
 
 .navbar-inverse .navbar-brand{
     color:#fff;
-    font-family:'concert one';
-    font-size:16px;
+    font-family:'tahoma';
+    font-size:22px;
     position: relative;
     top: 15px;
     margin-left:15px;!important
@@ -63,7 +63,7 @@ section#header #top-header h4{
     top:25%;
     padding:0 150px;
     text-shadow: 0 0 30px #000;
-    font-family: 'Concert One', cursive;
+    font-family: 'concert one', cursive;
     margin-top:40px;
 }
 #top-header a{
@@ -118,10 +118,6 @@ input#scroll.get-started{
 #intro_button{
     margin-top:15px;
     margin-right:10px;
-}
-
-.navbar-brand{
-    color:#fff;
 }
 
 .small.text-muted{
