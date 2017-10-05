@@ -94,16 +94,15 @@ function makeGraphs(error, donorsUSProjects) {
         .innerRadius(40)
         .transitionDuration(1500)
         .dimension(fundingStatus)
-        .group(numProjectsByFundingStatus);
+        .group(numProjectsByFundingStatus)
+        .useViewBoxResizing(true);
 
     totalTransfersND
-
         .valueAccessor(function (d) {
             return d;
         })
         .group(totalTransfers)
         .formatNumber(formatDollarsCommas)
-        .height(150)
         .useViewBoxResizing(true);
 
 
@@ -118,7 +117,8 @@ function makeGraphs(error, donorsUSProjects) {
         .ordinalColors(pieChartColours)
         .legend(dc.legend().x(20).y(10).itemHeight(13).gap(5))
         .cx(220)
-        .cy(117);
+        .cy(117)
+        .useViewBoxResizing(true);
 
     playerPositionChart
         .width(300)
@@ -130,7 +130,6 @@ function makeGraphs(error, donorsUSProjects) {
 
 
     numberTransfersND
-
         .formatNumber(d3.format("d"))
         .valueAccessor(function (d) {
             return d;
@@ -147,9 +146,11 @@ function makeGraphs(error, donorsUSProjects) {
         .elasticX(true)
         .brushOn(false)
         .renderArea(true)
+         .xAxisLabel("Season")
         .yAxisLabel("Number of Transfers")
          .xAxisLabel("Season")
-        .colors(["#00b159"]);
+        .colors(["#00b159"])
+        .useViewBoxResizing(true);
 
 
 
