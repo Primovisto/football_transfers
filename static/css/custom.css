@@ -21,9 +21,20 @@ section#header{
     text-align: center;
     border: none;
 }
+
+
+.navbar-inverse .navbar-header{
+    background-color:#28365C;
+}
+
 .navbar-inverse .navbar-brand{
     color:#fff;
-    margin-top:15px;
+    font-family:'concert one';
+    font-size:16px;
+    position: relative;
+    top: 15px;
+    margin-left:15px;!important
+    display:inline-block;
 }
 .navbar-brand{
     width: 100%;
@@ -230,6 +241,13 @@ button.guide-btn{
 
     .reset-btn{
         left:38%;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+    .navbar-inverse .navbar-brand{
+        font-size:18px;
     }
 
 }
