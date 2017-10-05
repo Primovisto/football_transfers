@@ -119,8 +119,6 @@ function makeGraphs(error, donorsUSProjects) {
         .cx(220)
         .cy(117);
 
-
-
     playerPositionChart
         .width(300)
         .height(250)
@@ -150,8 +148,7 @@ function makeGraphs(error, donorsUSProjects) {
         .renderArea(true)
         .yAxisLabel("Number of Transfers")
          .xAxisLabel("Season")
-        .colors(["#00b159"])
-        .useViewBoxResizing(true);
+        .colors(["#00b159"]);
 
 
 
@@ -172,8 +169,7 @@ function makeGraphs(error, donorsUSProjects) {
          .yAxisLabel("$")
          .xAxisLabel("Season")
         .ordinalColors(['#00b159'])
-        .elasticY(true)
-        .useViewBoxResizing(true);
+        .elasticY(true);
 
     dc.renderAll();
 
