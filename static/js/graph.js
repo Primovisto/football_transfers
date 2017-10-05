@@ -139,7 +139,6 @@ function makeGraphs(error, donorsUSProjects) {
         .group(all);
 
      numberTransfersPerSeasonChart
-
         .height(300)
         .dimension(yearDim)
         .group(total_year)
@@ -156,7 +155,6 @@ function makeGraphs(error, donorsUSProjects) {
 
 
      transferValueChart
-
         .height(300)
          .margins(dateDimChartMargins)
          .title(function (d) {
