@@ -33,7 +33,7 @@ function makeGraphs(error, donorsUSProjects) {
         return d["POSITION"];
     });
 
-    var totalDonationsDim = ndx.dimension(function (d) {
+    var totalTransfersDim = ndx.dimension(function (d) {
         return d["TOTAL TRANSFERS"];
     });
     var all = ndx.groupAll();
@@ -103,7 +103,8 @@ function makeGraphs(error, donorsUSProjects) {
         })
         .group(totalTransfers)
         .formatNumber(formatDollarsCommas)
-        .height(150);
+        .height(150)
+        .useViewBoxResizing(true);
 
 
     transferTypeChart
@@ -153,23 +154,23 @@ function makeGraphs(error, donorsUSProjects) {
 
 
      transferValueChart
-        .width(900)
-        .height(300)
+         .width(900)
+         .height(300)
          .margins(dateDimChartMargins)
          .title(function (d) {
             return d.key + ": " + formatCommas(d.value);
         })
-        .dimension(yearDim)
-        .group(valueDonationsByDate, 'Total Transfer Fees ($)')
-        .x(d3.scale.ordinal().domain([(minYear),(maxYear)]))
+         .dimension(yearDim)
+         .group(valueDonationsByDate, 'Total Transfer Fees ($)')
+         .x(d3.scale.ordinal().domain([(minYear),(maxYear)]))
          .legend(dc.legend().x(120).y(20).itemHeight(13).gap(5))
-        .xUnits(dc.units.ordinal)
-        .elasticX(true)
-        .renderArea(true)
+         .xUnits(dc.units.ordinal)
+         .elasticX(true)
+         .renderArea(true)
          .yAxisLabel("$")
          .xAxisLabel("Season")
-        .ordinalColors(['#00b159'])
-        .elasticY(true)
+         .ordinalColors(['#00b159'])
+         .elasticY(true)
          .useViewBoxResizing(true);
 
     dc.renderAll();
