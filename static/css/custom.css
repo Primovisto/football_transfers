@@ -30,19 +30,23 @@ section#header{
 .navbar-inverse .navbar-brand{
     color:#fff;
     font-family:'tahoma';
-    font-size:22px;
+    font-size:20px;
     position: relative;
     top: 15px;
     margin-left:15px;!important
-    display:inline-block;
+    display:inline-block;!important
 }
 .navbar-brand{
     width: 100%;
-    text-align: center;
     padding: 0 0 0 0;
     float: none;
 
 }
+
+.navbar-btn{
+    margin-right:5px;
+}
+
 section#header #top-header{
     height:780px;
 }
@@ -126,10 +130,6 @@ input#scroll.get-started{
     margin-left:30px;
     font-family: sans-serif;
     font-size:16px;
-}
-.reset {
-    float: right;
-    margin-top:15px;
 }
 
 #window-chart{
