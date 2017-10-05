@@ -31,16 +31,21 @@ section#header{
     color:#fff;
     font-family:'tahoma';
     font-size:20px;
+    width:75%;
     position: relative;
     top: 15px;
     margin-left:15px;!important
-    display:inline-block;!important
+
 }
 .navbar-brand{
     width: 100%;
     padding: 0 0 0 0;
     float: none;
 
+}
+
+.navbar-inverse .navbar-collapse{
+    background-color: #28365C;
 }
 
 .navbar-btn{
