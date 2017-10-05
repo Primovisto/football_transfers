@@ -117,8 +117,7 @@ function makeGraphs(error, donorsUSProjects) {
         .ordinalColors(pieChartColours)
         .legend(dc.legend().x(20).y(10).itemHeight(13).gap(5))
         .cx(220)
-        .cy(117)
-        .useViewBoxResizing();
+        .cy(117);
 
 
 
@@ -152,7 +151,7 @@ function makeGraphs(error, donorsUSProjects) {
         .yAxisLabel("Number of Transfers")
          .xAxisLabel("Season")
         .colors(["#00b159"])
-        .useViewBoxResizing();
+        .useViewBoxResizing(true);
 
 
 
@@ -168,16 +167,15 @@ function makeGraphs(error, donorsUSProjects) {
         .x(d3.scale.ordinal().domain([(minYear),(maxYear)]))
          .legend(dc.legend().x(120).y(20).itemHeight(13).gap(5))
         .xUnits(dc.units.ordinal)
-         .mouseZoomable(false)
         .elasticX(true)
-        .brushOn(false)
         .renderArea(true)
          .yAxisLabel("$")
          .xAxisLabel("Season")
         .ordinalColors(['#00b159'])
         .elasticY(true)
-        .renderHorizontalGridLines(true)
-        .useViewBoxResizing();
+        .useViewBoxResizing(true);
 
     dc.renderAll();
+
+
 }
