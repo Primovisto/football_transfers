@@ -126,7 +126,8 @@ function makeGraphs(error, donorsUSProjects) {
         .dimension(povertyLevelDim)
         .group(numProjectsByPovertyLevel)
         .ordinalColors(rowChartColours)
-        .xAxis().ticks(4);
+        .xAxis().ticks(4)
+        .useViewBoxResizing(true);
 
 
     numberTransfersND
@@ -134,7 +135,8 @@ function makeGraphs(error, donorsUSProjects) {
         .valueAccessor(function (d) {
             return d;
         })
-        .group(all);
+        .group(all)
+        .useViewBoxResizing(true);
 
      numberTransfersPerSeasonChart
         .width(900)
