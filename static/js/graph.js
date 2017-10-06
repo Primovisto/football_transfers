@@ -126,8 +126,7 @@ function makeGraphs(error, donorsUSProjects) {
         .dimension(povertyLevelDim)
         .group(numProjectsByPovertyLevel)
         .ordinalColors(rowChartColours)
-        .xAxis().ticks(4)
-        .useViewBoxResizing(true);
+        .xAxis().ticks(4);
 
 
     numberTransfersND
