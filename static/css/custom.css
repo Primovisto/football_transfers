@@ -101,6 +101,10 @@ input#scroll.get-started{
 #number-transfers-nd {
    font-size: 53px;
 }
+
+#total-transfers-nd{
+    font-size:53px;
+}
 .chart-wrapper{
 
     background-color:#2a6496;
@@ -134,6 +138,9 @@ input#scroll.get-started{
 
 #transfer-type-chart{
    margin-left:20px;
+}
+#window-chart{
+    margin-left:60px;
 }
 
 
@@ -236,12 +243,16 @@ button.guide-btn{
     }
 
     #total-transfers-nd{
-        font-size:24px;
+        font-size:32px;
     }
 
     #number-transfers-nd{
-        font-size:24px;
+        font-size:32px;
     }
+
+    #window-chart{
+    margin-left:0;
+}
 
 }
 
