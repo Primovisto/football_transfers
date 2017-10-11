@@ -16,17 +16,17 @@ function makeGraphs(error, donorsUSProjects) {
 
     var dateDimChartMargins = {top: 30, right: 50, bottom: 25, left: 90};
 
-    var fundingStatus = ndx.dimension(function (d) {
+    var windowDim = ndx.dimension(function (d) {
         return d["WINDOW"];
     });
-    var stateDim = ndx.dimension(function (d) {
+    var leagueDim = ndx.dimension(function (d) {
         return d["LEAGUE"];
     });
-    var focusSubjectDim = ndx.dimension(function (d) {
+    var transferTypeDim = ndx.dimension(function (d) {
         return d["PRICE DESCRIPTION"];
     });
 
-    var povertyLevelDim = ndx.dimension(function (d) {
+    var positionDim = ndx.dimension(function (d) {
         return d["POSITION"];
     });
     var all = ndx.groupAll();
@@ -37,20 +37,20 @@ function makeGraphs(error, donorsUSProjects) {
 
 
     //Calculate metrics
-    var numProjectsByFundingStatus = fundingStatus.group();
+    var numTransfersByTransferWindow = windowDim.group();
 
-    var stateGroup = stateDim.group();
+    var leagueGroup = leagueDim.group();
 
     var totalTransfers = ndx.groupAll().reduceSum(function (d) {
         return d["PRICE"];
     });
-    var numProjectsByFocusSubject = focusSubjectDim.group();
+    var numTransfersByTransferType = transferTypeDim.group();
 
-    var numProjectsByPovertyLevel = povertyLevelDim.group();
+    var numTransfersByPlayerPosition = positionDim.group();
 
     var total_year = dateDim.group();
 
-    var valueDonationsByDate = dateDim.group().reduceSum(function (d) {
+    var valueTransfersByDate = dateDim.group().reduceSum(function (d) {
         return d["PRICE"];
     });
 
@@ -78,16 +78,20 @@ function makeGraphs(error, donorsUSProjects) {
     var transferValueChart = dc.lineChart("#donation-value-line-chart");
 
     selectField = dc.selectMenu('#menu-select')
-        .dimension(stateDim)
-        .group(stateGroup);
+        .dimension(leagueDim)
+        .group(leagueGroup);
     transferWindowChart
         .ordinalColors(pieChartColours)
         .height(234)
         .radius(100)
+        .width(360)
         .innerRadius(40)
         .transitionDuration(1500)
-        .dimension(fundingStatus)
-        .group(numProjectsByFundingStatus)
+        .legend(dc.legend().x(20).y(10).itemHeight(13).gap(5))
+        .dimension(windowDim)
+        .group(numTransfersByTransferWindow)
+        .cx(220)
+        .cy(117)
         .useViewBoxResizing(true)
        ;
     totalTransfersND
@@ -104,8 +108,8 @@ function makeGraphs(error, donorsUSProjects) {
         .width(360)
         .innerRadius(40)
         .transitionDuration(1500)
-        .dimension(focusSubjectDim)
-        .group(numProjectsByFocusSubject)
+        .dimension(transferTypeDim)
+        .group(numTransfersByTransferType)
         .ordinalColors(pieChartColours)
         .legend(dc.legend().x(20).y(10).itemHeight(13).gap(5))
         .cx(220)
@@ -115,8 +119,8 @@ function makeGraphs(error, donorsUSProjects) {
     playerPositionChart
         .width(300)
         .height(250)
-        .dimension(povertyLevelDim)
-        .group(numProjectsByPovertyLevel)
+        .dimension(positionDim)
+        .group(numTransfersByPlayerPosition)
         .ordinalColors(rowChartColours)
         .xAxis().ticks(6);
     numberTransfersND
@@ -129,7 +133,7 @@ function makeGraphs(error, donorsUSProjects) {
         ;
     numberTransfersPerSeasonChart
         .width(900)
-        .height(325)
+        .height(365)
         .margins({top: 10, right: 50, bottom: 30, left: 50})
         .dimension(dateDim)
         .group(total_year, 'Number of Transfers')
@@ -144,13 +148,13 @@ function makeGraphs(error, donorsUSProjects) {
 
     transferValueChart
         .width(900)
-        .height(325)
+        .height(365)
         .margins(dateDimChartMargins)
         .title(function (d) {
             return d.key + ": " + formatCommas(d.value);
         })
         .dimension(dateDim)
-        .group(valueDonationsByDate, 'Total Transfer Fees ($)')
+        .group(valueTransfersByDate, 'Total Transfer Fees ($)')
         .x(d3.scale.ordinal().domain([(minDate), (maxDate)]))
         .legend(dc.legend().x(120).y(20).itemHeight(13).gap(5))
         .xUnits(dc.units.ordinal)
@@ -166,5 +170,7 @@ function makeGraphs(error, donorsUSProjects) {
 
 
     dc.renderAll();
+
+    $('#loading').hide();
 }
 

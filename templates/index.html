@@ -17,23 +17,23 @@
 </head>
 
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top hidden-md hidden-lg" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top hidden-lg" role="navigation">
     <div class="container">
-        <div class="navbar-header hidden-md hidden-lg">
-            <button type="button" class="navbar-toggle collapsed hidden-md hidden-lg" data-toggle="collapse" data-target="#nav-menu"
+        <div class="navbar-header hidden-lg">
+            <button type="button" class="navbar-toggle collapsed hidden-lg" data-toggle="collapse" data-target="#nav-menu"
                     aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="navbar-brand hidden-md hidden-lg">
+            <div class="navbar-brand hidden-lg">
                 Football Transfers Dashboard
 
 
             </div>
         </div>
-        <div class="collapse navbar-collapse hidden-md hidden-lg" id="nav-menu">
+        <div class="collapse navbar-collapse hidden-lg" id="nav-menu">
             <p class="navbar-nav pull-right">
 
                 <button class="intro_button btn btn-primary navbar-btn" type="button" autofocus
@@ -46,15 +46,18 @@
         </div>
     </div>
 </div>
+
+
+
     <section id="header" class="hidden-xs hidden-sm">
-        <div id="top-header" class="hidden-xs hidden-sm" role="navigation">
+        <div id="top-header" class="hidden-xs hidden-sm hidden-md" role="navigation">
             <h3>Football Transfers Dashboard</h3>
             <h4>The number one source for football transfer data and statistics across the world's top leagues. Want to know which leagues spend the most on transfers? Which positions are the most transferred or which transfer window is the most popular? If so, you're in the right place!</h4>
             <input type="button" value="Get Started" id="scroll" class="get-started"/>
         </div>
     </section>
 
-    <div class="dash-header hidden-xs hidden-sm">
+    <div class="dash-header hidden-xs hidden-sm hidden-md">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <button type="button" class="guide-btn" onclick="introJs().start();">User Guide</button>
             <button type="button" class="reset-btn" onclick="dc.filterAll();dc.renderAll();"><img src="http://i67.tinypic.com/qn7cde.png" height="20" width="20"> Reset All</button>
@@ -82,7 +85,7 @@
             </div>
             <!-- Number of Transfers -->
             <div class="col-sm-3 col-xs-6">
-                <div class="chart-wrapper trans" data-step="4" data-intro="Represents the total number of transfers that have occurred in the stated time period" data-position="bottom">
+                <div class="chart-wrapper trans" data-step="3" data-intro="Represents the total number of transfers that have occurred in the stated time period" data-position="bottom">
                     <div class="chart-title">
                         Total Transfers
                     </div>
@@ -102,7 +105,7 @@
             </div>
             <!-- Value of Transfers -->
             <div class="col-sm-6 col-xs-12">
-                <div class="chart-wrapper trans" data-step="3" data-intro="This figure represents the total amount spent on transfers (USD)." data-position="bottom">
+                <div class="chart-wrapper trans" data-step="4" data-intro="This figure represents the total amount spent on transfers (USD)." data-position="bottom">
                     <div class="chart-title">
                         Total Transfer Fees in USD
                     </div>
@@ -140,7 +143,7 @@
         </div>
     </div>
     <!-- Transfer Window Pie Chart -->
-    <div class="col-lg-4 col-xs-12" style="margin-top:80px;">
+    <div class="col-lg-4 col-xs-12 col-spacing">
         <div class="row">
             <div class="col-sm-6 col-lg-12">
                 <div class="chart-wrapper trans" data-step="7" data-intro="A pie chart that shows which transfer window transfers have been completed during." data-position="bottom">
@@ -177,6 +180,7 @@
         </div>
     </div>
     <hr>
+
     <div class="small text-muted"> Data Visualization by Ed Stack for Code Institute</div>
     <script src="{{ url_for ('static', filename='lib/js/jquery-3.2.1.min.js')}}"></script>
     <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>

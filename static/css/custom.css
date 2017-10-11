@@ -31,14 +31,12 @@ section#header{
     color:#fff;
     font-family:'tahoma';
     font-size:20px;
-    width:75%;
     position: relative;
     top: 15px;
     margin-left:15px;!important
 
 }
 .navbar-brand{
-    width: 100%;
     padding: 0 0 0 0;
     float: none;
 
@@ -46,6 +44,10 @@ section#header{
 
 .navbar-inverse .navbar-collapse{
     background-color: #28365C;
+}
+
+.navbar-inverse{
+    background-color:#28365C;
 }
 
 .navbar-btn{
@@ -139,16 +141,26 @@ input#scroll.get-started{
 #transfer-type-chart{
    margin-left:20px;
 }
-#window-chart{
-    margin-left:60px;
-}
+
 
 
 .dc-chart g.row text {
    fill: white;
    font-size: 12px;
 }
+#loading{
+    z-index: 1000;
+    background: linear-gradient(20deg, blue, black);
+    color: white;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    font-weight: bold;
+    left: 0;
+    padding-top: 15%;
 
+}
 #total-projects {
    background: #33CC99;
    width: 200px;
@@ -179,7 +191,9 @@ input#scroll.get-started{
     background-color:#28365C;
     opacity:0.94;
 }
-
+.col-spacing{
+    margin-top:80px;
+}
 
 .dc-select-menu {
    background: #eee;
@@ -242,23 +256,22 @@ button.guide-btn{
         left:38%;
     }
 
-    #total-transfers-nd{
-        font-size:32px;
-    }
-
-    #number-transfers-nd{
-        font-size:32px;
-    }
-
     #window-chart{
     margin-left:0;
 }
 
 }
 
-@media screen and (max-width: 380px){
+
+
+@media screen and (max-width: 767px){
     .navbar-inverse .navbar-brand{
         font-size:18px;
+        width:75%;
     }
+
+   .col-spacing{
+       margin-top:10px;
+   }
 
 }
