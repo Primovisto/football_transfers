@@ -39,7 +39,6 @@ section#header{
 .navbar-brand{
     padding: 0 0 0 0;
     float: none;
-
 }
 
 .navbar-inverse .navbar-collapse{
@@ -261,16 +260,16 @@ button.guide-btn{
 }
 
 }
-
-
-
-@media screen and (max-width: 767px){
+@media screen and (max-device-width: 767px){
     .navbar-inverse .navbar-brand{
         font-size:18px;
         width:75%;
     }
 
-   .col-spacing{
+}
+
+@media screen and (max-device-width: 1200px){
+    .col-spacing{
        margin-top:10px;
    }
 
