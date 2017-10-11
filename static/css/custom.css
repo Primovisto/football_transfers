@@ -265,6 +265,13 @@ button.guide-btn{
         font-size:18px;
         width:75%;
     }
+    #number-transfers-nd {
+   font-size: 36px;
+}
+
+#total-transfers-nd{
+    font-size:36px;
+}
 
 }
 
