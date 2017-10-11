@@ -29,7 +29,6 @@ section#header{
 
 .navbar-inverse .navbar-brand{
     color:#fff;
-    font-family:'tahoma';
     font-size:20px;
     position: relative;
     top: 15px;
@@ -100,11 +99,11 @@ input#scroll.get-started{
 }
 
 #number-transfers-nd {
-   font-size: 53px;
+   font-size: 45px;
 }
 
 #total-transfers-nd{
-    font-size:53px;
+    font-size:45px;
 }
 .chart-wrapper{
 
@@ -132,33 +131,105 @@ input#scroll.get-started{
 .small.text-muted{
    color:#fff;
     font-weight:600;
-    margin-left:30px;
+    margin-left:20px;
     font-family: sans-serif;
     font-size:16px;
 }
-
-#transfer-type-chart{
-   margin-left:20px;
-}
-
-
 
 .dc-chart g.row text {
    fill: white;
    font-size: 12px;
 }
-#loading{
-    z-index: 1000;
-    background: linear-gradient(20deg, blue, black);
-    color: white;
-    position:fixed;
+/*- Page Preloader -*/
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-    text-align:center;
-    font-weight: bold;
-    left: 0;
-    padding-top: 15%;
+    z-index: 1000;
+}
 
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    z-index: 1001;
+}
+
+.loader-balls {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-image: url('http://i63.tinypic.com/2581p51.png');
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+#ball-1 {
+    animation: bounce 1s ease-in-out 0.33s infinite;
+
+}
+
+#ball-2 {
+    position: absolute;
+    left: 60px;
+    animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+#ball-3 {
+    position: absolute;
+    left: -60px;
+    animation: bounce 1s ease-in-out 1s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    75%,
+    100% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-30px);
+    }
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #28365C;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.loader-section.section-left {
+    left: 0;
+}
+
+.loader-section.section-right {
+    right: 0;
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
 }
 #total-projects {
    background: #33CC99;
@@ -260,18 +331,11 @@ button.guide-btn{
 }
 
 }
-@media screen and (max-device-width: 767px){
+@media screen and (max-width: 767px){
     .navbar-inverse .navbar-brand{
         font-size:18px;
         width:75%;
     }
-    #number-transfers-nd {
-   font-size: 36px;
-}
-
-#total-transfers-nd{
-    font-size:36px;
-}
 
 }
 
@@ -279,5 +343,12 @@ button.guide-btn{
     .col-spacing{
        margin-top:10px;
    }
+    #number-transfers-nd {
+   font-size: 36px;
+}
+
+#total-transfers-nd{
+    font-size:36px;
+}
 
 }
