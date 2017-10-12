@@ -118,7 +118,7 @@ function makeGraphs(error, donorsUSProjects) {
         ;
     playerPositionChart
         .width(300)
-        .height(236)
+        .height(234)
         .dimension(positionDim)
         .group(numTransfersByPlayerPosition)
         .ordinalColors(rowChartColours)
@@ -133,7 +133,7 @@ function makeGraphs(error, donorsUSProjects) {
         ;
     numberTransfersPerSeasonChart
         .width(900)
-        .height(365)
+        .height(363)
         .margins({top: 10, right: 50, bottom: 30, left: 50})
         .dimension(dateDim)
         .group(total_year, 'Number of Transfers')
@@ -148,7 +148,7 @@ function makeGraphs(error, donorsUSProjects) {
 
     transferValueChart
         .width(900)
-        .height(365)
+        .height(363)
         .margins(dateDimChartMargins)
         .title(function (d) {
             return d.key + ": " + formatCommas(d.value);
