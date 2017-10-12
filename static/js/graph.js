@@ -82,7 +82,7 @@ function makeGraphs(error, donorsUSProjects) {
         .group(leagueGroup);
     transferWindowChart
         .ordinalColors(pieChartColours)
-        .height(236)
+        .height(234)
         .radius(100)
         .width(360)
         .innerRadius(40)
@@ -103,7 +103,7 @@ function makeGraphs(error, donorsUSProjects) {
     .useViewBoxResizing(true)
         ;
     transferTypeChart
-        .height(236)
+        .height(234)
         .radius(100)
         .width(360)
         .innerRadius(40)
