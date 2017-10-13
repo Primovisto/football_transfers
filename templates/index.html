@@ -12,6 +12,8 @@
     <link rel="shortcut icon" href="/static/imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
     <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/remodal.css')}}">
+<link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/remodal-default-theme.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Fira+Sans:700|Signika:700" rel="stylesheet">
 </head>
@@ -62,7 +64,35 @@
         <div id="top-header" class="hidden-xs hidden-sm hidden-md" role="navigation">
             <h3>Football Transfers Dashboard</h3>
             <h4>The number one source for football transfer data and statistics across the world's top leagues. Want to know which leagues spend the most on transfers? Which positions are the most transferred or which transfer window is the most popular? If so, you're in the right place!</h4>
-            <input type="button" value="Get Started" id="scroll" class="get-started"/>
+            <div class="two-buttons">
+                <input type="button" value="Get Started" id="scroll" class="get-started">
+                <a type="button" id="remodal-button" href="#modal">Data Findings</a>
+            </div>
+
+
+            <div class="remodal" data-remodal-id="modal">
+               <button data-remodal-action="close" class="remodal-close"></button>
+                 <h1>Key Findings</h1>
+                <p><strong>Which league is the most active for transfers?</strong>
+                    <br>
+                   The most prolific league in terms of both transfer numbers and transfer fees is the English Premier League. The EPL has had 1203 transfers producing transfer fees of over 6 Billion US Dollars since 2010. That 6 Billion dollar figure is more than double that of the next highest spending league (La Liga).
+               </p>
+                <p><strong>Which transfer window is the most popular?</strong>
+                    <br>
+                   The Pre-Season transfer window is much more popular for transfers that the Mid-Season transfer window. 3931 of the total 5153 transfers were completed during the Pre-Season window (76.3% of all transfers).</p>
+                <p><strong>Has the average transfer fee increased or decreased year on year?</strong>
+                    <br>
+                    The average transfer fee increased every season. Using the transfer value bar chart the average transfer fee in 2010 was $2,288,452 and by 2017 that had almost doubled to $4,492,153.</p>
+                <p><strong>Which leagues use loan deals and free transfers the most?</strong>
+                    <br>
+                    The most popular league for loan deals and free transfers is Serie A. Out of a total of 2,426 loans and free transfers among all leagues, Serie A accounted for 702 with La Liga second on 522. The EPL does not utilise loan deals and free transfers as much as other leagues with only 446 loan/free transfers since 2010.</p>
+                <p><strong>What positions are the most transferred and which is most costly position to purchase?</strong>
+                    <br>
+                    The most transferred position is Midfield with (1934) transfers of Midfielders since 2010. Defenders (1481), Attacker (1377) and Goalkeepers (361). Attacker is the most costly position to purchase at an average fee of ($3,638,888). 2nd) Midfielders ($3,324,692) 3rd) Defenders ($2,043,909) 4th) Goalkeepers ($1,059,002).</p>
+                <br>
+               <button data-remodal-action="confirm" class="remodal-confirm">Finish</button>
+            </div>
+
         </div>
     </section>
 
@@ -191,6 +221,7 @@
     <hr>
 
     <p class="small text-muted"> Data Visualization by Ed Stack for Code Institute</p>
+
     <script src="{{ url_for ('static', filename='lib/js/jquery-3.2.1.min.js')}}"></script>
     <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
     <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
@@ -200,6 +231,7 @@
     <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
     <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
     <script src="{{ url_for ('static', filename='js/scroll.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/remodal.js')}}"></script>
     <script src="/static/lib/js/intro.js"></script>
 </body>
 
